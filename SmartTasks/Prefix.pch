@@ -1,0 +1,19 @@
+//
+//  Prefix.pch
+//  SmartTasks
+//
+//  Created by Aleksandar Radojicic on 22/1/16.
+//  Copyright © 2016 Aleksandar Radojicic. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#import "Constants.h"
+#import <MBProgressHUD.h>
+#import "Converter.h"
+#import "HelperMethods.h"
+#import "TaskManager.h"
+#import "UINavigationBar+Addition.h"
+
+#endif 

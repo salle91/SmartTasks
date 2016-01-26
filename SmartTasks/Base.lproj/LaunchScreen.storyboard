@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="27n-4Q-Gbn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-kf-j3v" userLabel="View Background">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="1" green="0.87058823529999996" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Smart Tasks logo" translatesAutoresizingMaskIntoConstraints="NO" id="cUD-X7-Jyd">
+                                <rect key="frame" x="77.5" y="124.5" width="165" height="169"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intro screen illustration" translatesAutoresizingMaskIntoConstraints="NO" id="B3g-NX-1SI">
+                                <rect key="frame" x="57.5" y="369" width="205" height="199"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B3g-NX-1SI" firstAttribute="centerX" secondItem="27n-4Q-Gbn" secondAttribute="centerX" id="3DP-33-D82"/>
+                            <constraint firstItem="cUD-X7-Jyd" firstAttribute="centerX" secondItem="27n-4Q-Gbn" secondAttribute="centerX" id="44A-re-qnS"/>
+                            <constraint firstItem="cUD-X7-Jyd" firstAttribute="top" secondItem="B3g-NX-1SI" secondAttribute="bottom" constant="20" id="DbE-HQ-hks"/>
+                            <constraint firstItem="Hh9-kf-j3v" firstAttribute="leading" secondItem="27n-4Q-Gbn" secondAttribute="leading" id="GzX-wU-TC0"/>
+                            <constraint firstItem="Hh9-kf-j3v" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="T3D-eg-kIe"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Hh9-kf-j3v" secondAttribute="bottom" id="Tvb-sJ-zIH"/>
+                            <constraint firstAttribute="trailing" secondItem="Hh9-kf-j3v" secondAttribute="trailing" id="VBo-7Z-dEa"/>
+                            <constraint firstItem="cUD-X7-Jyd" firstAttribute="centerY" secondItem="27n-4Q-Gbn" secondAttribute="centerY" multiplier="0.7" constant="10" id="sYR-Ta-L9b"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="B3g-NX-1SI" secondAttribute="bottom" id="wZa-S9-Nv9"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DbE-HQ-hks"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Intro screen illustration" width="205" height="199"/>
+        <image name="Smart Tasks logo" width="165" height="169"/>
+    </resources>
+</document>

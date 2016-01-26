@@ -25,7 +25,7 @@
     if (task.taskState == TaskStateResolved) {
         self.viewTaskStateIndicator.hidden = NO;
         self.imageViewTaskStateIndicator.image = [UIImage imageNamed:@"Resolved sign"];
-    } else if (task.taskState == TaskStateCannotBeResolved){
+    } else if (task.taskState == TaskStateCannotBeResolved) {
         self.viewTaskStateIndicator.hidden = NO;
         self.imageViewTaskStateIndicator.image = [UIImage imageNamed:@"Unresolved sign"];
     } else {

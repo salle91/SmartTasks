@@ -67,7 +67,7 @@ static const int taskCellSpacingBetweenComponents = 10;
                                                      options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
                                                   attributes:@{ NSFontAttributeName:UIFONT_AMSIPRO_BOLD(20)}
                                                      context:nil];
-    if  (textSizeTitle.size.height > self.layoutConstraintHeightLabelTaskTitle.constant){
+    if  (textSizeTitle.size.height > self.layoutConstraintHeightLabelTaskTitle.constant) {
         self.layoutConstraintHeightViewTaskDetails.constant -= self.layoutConstraintHeightLabelTaskTitle.constant;
         self.layoutConstraintHeightLabelTaskTitle.constant = textSizeTitle.size.height;
         self.layoutConstraintHeightViewTaskDetails.constant += textSizeTitle.size.height;
@@ -77,7 +77,7 @@ static const int taskCellSpacingBetweenComponents = 10;
                                                           options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading
                                                        attributes:@{ NSFontAttributeName:UIFONT_AMSIPRO_BOLD(11)}
                                                           context:nil];
-    if  (textSizeDescription.size.height > self.layoutConstraintHeightTextViewDescription.constant){
+    if  (textSizeDescription.size.height > self.layoutConstraintHeightTextViewDescription.constant) {
         self.layoutConstraintHeightViewTaskDetails.constant -= self.layoutConstraintHeightTextViewDescription.constant;
         self.layoutConstraintHeightTextViewDescription.constant = textSizeDescription.size.height;
         self.layoutConstraintHeightViewTaskDetails.constant += textSizeDescription.size.height;
@@ -91,7 +91,7 @@ static const int taskCellSpacingBetweenComponents = 10;
         self.labelDaysLeft.textColor = UICOLOR_GREEN;
         self.labelTaskState.text = @"Resolved";
         self.labelTaskState.textColor = UICOLOR_GREEN;
-    } else if (self.currentSelectedTask.taskState == TaskStateCannotBeResolved){
+    } else if (self.currentSelectedTask.taskState == TaskStateCannotBeResolved) {
         self.viewButtons.hidden = YES;
         self.imageViewResolvedSign.hidden = YES;
         self.imageViewUnresolvedSign.hidden = NO;

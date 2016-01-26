@@ -31,7 +31,7 @@
 }
 
 - (id)initWithCoder:(NSCoder *)decoder {
-    if(self = [super init]){
+    if(self = [super init]) {
         self.uid = [decoder decodeObjectForKey:@"id"];
         self.title = [decoder decodeObjectForKey:@"title"];
         self.targetDate = [decoder decodeObjectForKey:@"targetDate"];
